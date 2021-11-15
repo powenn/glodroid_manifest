@@ -3,6 +3,8 @@
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
 This version is based on [Android 11.0.0 Release 31](https://android.googlesource.com/platform/manifest/+/refs/heads/android-11.0.0_r31).  
+# What's new
+Added MacOS instruction
 
 ## Supported devices:
 ### SUNXI platform:
@@ -100,4 +102,6 @@ Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* 
 *After several minutes flashing should complete and Android should boot*  
   
 #### NOTE: Monitor has to be connected to the board and powered-up during flashing!
-  
+ 
+## Else 
+To use Glodroid with MacOS,please read MacOS instruction 
