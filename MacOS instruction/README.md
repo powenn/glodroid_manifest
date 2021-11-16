@@ -1,6 +1,6 @@
 # This is a instruction for how to use Glodroid on MacOS
 
-This should help people who doesn't have comuptuer with linux installed but having Mac or Macbook
+This might help people who doesn't have comuptuer with linux installed but having Mac or Macbook
 
 Just modify its commands in .sh file,I will tell you how to do
 
