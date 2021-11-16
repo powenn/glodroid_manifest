@@ -1,1 +1,31 @@
-initialized
+You need to do some modifications to original commands in .sh file 
+Using flash-sd.sh in images folder for pinephone for example
+Commands need to modify like these
+
+./fastboot flash gpt deploy-gpt.img --> fastboot flash gpt deploy-gpt.img
+./fastboot --wipe-and-use-fbe --> fastboot -w
+
+Delete all ./ before fastboot
+Recommend save your modified commands to a .txt file
+Below is all needed commands for flashing android to pinephone
+--------------------------------------------------------------
+# Update bootloader to ensure we have latest GPT table layout.
+fastboot flash gpt deploy-gpt.img
+fastboot flash bootloader bootloader-sd.img
+fastboot flash uboot-env  env.img
+fastboot reboot
+
+# Flash
+fastboot oem format
+fastboot flash bootloader      bootloader-sd.img
+fastboot flash uboot-env       env.img
+fastboot flash recovery_boot   boot.img
+fastboot erase misc
+
+fastboot reboot-fastboot
+
+fastboot flash boot_a boot.img
+fastboot flash dtbo_a boot_dtbo.img
+fastboot flash super  super.img
+fastboot -w
+fastboot reboot
