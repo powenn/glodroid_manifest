@@ -56,6 +56,11 @@ Now run all of the modified commands to flash
 ## Demo video
 Full progress of flash android 11 to pinephone 
 
-[Video on Youtube](https://youtu.be/UDY988kbdQU)
+<a href="https://www.youtube.com/watch?v=UDY988kbdQU">
+  <img src="https://img.youtube.com/vi/UDY988kbdQU/maxresdefault.jpg" >
+</a>
 
 # CONTACT ME ON [TWITTER](https://twitter.com/powen00hsiao) FOR QUESTIONS
+<a href="https://twitter.com/powen00hsiao">
+  <img src="https://pbs.twimg.com/profile_images/1404649867033550848/3m6kzjQa_400x400.jpg" height="320"/>
+</a>
