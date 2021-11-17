@@ -1,4 +1,4 @@
-# This is a instruction for how to use Glodroid on MacOS
+# This is an instruction for how to use Glodroid on MacOS
 
 This might help people who doesn't have comuptuer with linux installed but having Mac or Macbook
 
