@@ -105,3 +105,5 @@ Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* 
  
 ## Else 
 To use Glodroid with MacOS,please read MacOS instruction 
+
+[MacOS instruction](https://github.com/powenn/glodroid_manifest/tree/master/MacOS%20instruction)
