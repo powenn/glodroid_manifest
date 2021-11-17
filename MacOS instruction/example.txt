@@ -7,7 +7,7 @@ Commands need to modify like these
 
 Delete all ./ before fastboot
 Recommend save your modified commands to a .txt file
-Below is all needed commands for flashing android to pinephone
+Below are all needed commands for flashing android to pinephone
 --------------------------------------------------------------
 # Update bootloader to ensure we have latest GPT table layout.
 fastboot flash gpt deploy-gpt.img
