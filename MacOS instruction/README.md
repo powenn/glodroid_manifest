@@ -87,7 +87,7 @@ flash with separate commands,check Demo video2 for only one shell script flashin
 ## Demo video 2
 flash with only one shell script on MacOS
 
-<a href="https://www.youtube.com/watch?v=W9GmnEga24">
+<a href="https://www.youtube.com/watch?v=_W9GmnEga24">
   <img src="https://img.youtube.com/vi/W9GmnEga24/maxresdefault.jpg" >
 </a>
 
