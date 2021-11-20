@@ -15,7 +15,7 @@ Shell script works on mac ,I have provide .sh file for pinephone flashing,check 
 
 ## If flash with separate commands
 - commands need to run separately
--don't execute command before previous didn't done
+- don't execute command before previous didn't done
 
 ## Needed dependencies on MacOS
 `ADB`
