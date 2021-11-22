@@ -1,10 +1,14 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
 for job in `jobs -p`
 do
   wait $job
 done
 
+# start adb server
+adb kill-server
+adb start-server
 # Update bootloader to ensure we have latest GPT table layout.
 fastboot flash gpt deploy-gpt.img
 fastboot flash bootloader bootloader-sd.img
@@ -32,3 +36,4 @@ fastboot flash super  super.img
 fastboot -w
 fastboot reboot
 echo "Now booting into Android"
+adb kill-server

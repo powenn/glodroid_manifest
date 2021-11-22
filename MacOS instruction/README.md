@@ -1,15 +1,16 @@
 # This is an instruction for how to use Glodroid on MacOS
 
+## Onnce you complete,just double click and it will start flashing
+
 This might help people who doesn't have comuptuer with linux installed but having Mac or Macbook
 
 Just modify its commands in .sh file,I will tell you how to do
 
 First thing:I only have tested with pinephone,because I don't have others devices to test,but I have check some of others devices release,the commands in their .sh file are similar,so this should work if you did the correct modifications. 
 
-Shell script works on mac ,I have provide .sh file for pinephone flashing,check [MacOS-ShellScript](https://github.com/powenn/glodroid_manifest/tree/master/MacOS-ShellScript),.sh for others devices might be add in future,actually you can do it by yourself,just follow the instruction.
+Shell script works on mac ,I have provide .command file for pinephone flashing,check [MacOS-ShellScript](https://github.com/powenn/glodroid_manifest/tree/master/MacOS-ShellScript),.command for others devices might be add in future,actually you can do it by yourself,just follow the instruction.
 
 ## Important things 
-- charge your macbook before start to flash ,it must be charged during the progress
 - must use usb cable to connect ,if your macbook only have thunderbolt then you need OTG
 - be patience to the progress,actually it won't take you so much time,don't unplug device before everything done(success boot into system and home screen displaying)
 
@@ -47,7 +48,10 @@ replace oringinal commands to modified
 
 `#!/bin/sh -xe --> #!/bin/bash`
 
-add this
+add these
+```
+cd "$(dirname "$0")"
+```
 ```
 for job in `jobs -p`
 do
@@ -58,37 +62,24 @@ add sleep 1 after the first fastboot reboot
 
 delete set +x and set -x
 
+rename .sh to .command
+
 You might need a example,just check [MacOS-ShellScript](https://github.com/powenn/glodroid_manifest/tree/master/MacOS-ShellScript)
 
 ## Flash your devices
-start adb 
-```
-adb start-server
-```
-Open to the ectracted folder `images` which contain lots of .img files in terminal by using `cd` command
-
-Type cd in terminal and drag the folder to terminal window ,it will input the path automatically
-```
-cd <<images-path>>
-```
+Copy the .command file to the images folder which contain lots of .img files
+ 
 Connect your device 
 
-Now drag modified .sh to terminal or run all of the modified commands to flash.
+Double click .command file to flash,easy right ?
 
-## Demo video 1
+## Demo video 
 Full progress of flash android 11 to pinephone 
 
-flash with separate commands,check Demo video2 for only one shell script flashing 
+Just double click to start flashing 
 
-<a href="https://www.youtube.com/watch?v=UDY988kbdQU">
-  <img src="https://img.youtube.com/vi/UDY988kbdQU/maxresdefault.jpg" >
-</a>
-
-## Demo video 2
-flash with only one shell script on MacOS
-
-<a href="https://www.youtube.com/watch?v=_W9GmnEga24">
-  <img src="https://i.ytimg.com/vi/_W9GmnEga24/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAids2Ku6sLZbKJOUSCIRUZY8TxVw" >
+<a href="https://www.youtube.com/watch?v=CV6fkq5_OaY">
+  <img src="https://img.youtube.com/vi/CV6fkq5_OaY/maxresdefault.jpg" >
 </a>
 
 # CONTACT ME ON [TWITTER](https://twitter.com/powen00hsiao) FOR QUESTIONS
