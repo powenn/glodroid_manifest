@@ -1,6 +1,6 @@
 # This is an instruction for how to use Glodroid on MacOS
 
-## Onnce you complete,just double click and it will start flashing
+## Once you complete,just double click and it will start flashing
 
 This might help people who doesn't have comuptuer with linux installed but having Mac or Macbook
 
