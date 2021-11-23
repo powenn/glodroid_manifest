@@ -33,7 +33,7 @@ fastboot flash boot_a boot.img
 fastboot flash dtbo_a boot_dtbo.img
 echo "It would take some time,please wait and don't unplug device"
 fastboot flash super  super.img
-fastboot -w
+fastboot –wipe-and-use-fbe
 fastboot reboot
 echo "Now booting into Android"
 adb kill-server

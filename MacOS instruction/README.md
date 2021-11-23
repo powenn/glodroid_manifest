@@ -33,7 +33,7 @@ Commands need to modify like these
 
 `./fastboot flash gpt deploy-gpt.img --> fastboot flash gpt deploy-gpt.img`
 
-`./fastboot --wipe-and-use-fbe --> fastboot -w`
+`./fastboot --wipe-and-use-fbe --> fastboot –wipe-and-use-fbe`
 
 `Delete all ./ before fastboot`
 
