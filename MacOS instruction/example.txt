@@ -3,7 +3,7 @@ Using flash-sd.sh in images folder for pinephone for example
 Commands need to modify like these
 
 ./fastboot flash gpt deploy-gpt.img --> fastboot flash gpt deploy-gpt.img
-./fastboot --wipe-and-use-fbe --> fastboot –wipe-and-use-fbe
+./fastboot --wipe-and-use-fbe --> fastboot –w
 Delete all ./ before fastboot
 
 Recommend save your modified commands to a .txt file
