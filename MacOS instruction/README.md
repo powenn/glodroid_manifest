@@ -23,7 +23,10 @@ Shell script works on mac ,I have provide .command file for pinephone flashing,c
 ```
 brew install homebrew/cask/android-platform-tools
 ```
-
+`e2fsprogs`
+```
+brew install e2fsprogs
+```
 ## Commands modifications
 You need to do some modifications to original commands in .sh file 
 
