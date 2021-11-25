@@ -28,9 +28,7 @@ fastboot flash bootloader      bootloader-emmc.img
 fastboot flash uboot-env       env.img
 fastboot flash recovery_boot   boot.img
 fastboot erase misc
-
 fastboot reboot-fastboot
-
 fastboot flash boot   boot.img
 fastboot flash dtbo_a boot_dtbo.img
 echo "It would take some time,please wait and don't unplug device"
