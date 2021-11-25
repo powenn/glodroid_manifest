@@ -2,9 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on [Android 11.0.0 Release 31](https://android.googlesource.com/platform/manifest/+/refs/heads/android-11.0.0_r31).  
-# What's new
-Added MacOS instruction
+This version is based on [Android 12.0.0 Release 15](https://android.googlesource.com/platform/manifest/+/refs/heads/android-12.0.0_r15).  
 
 ## Supported devices:
 ### SUNXI platform:
@@ -12,6 +10,7 @@ Added MacOS instruction
 - Orange PI Plus 2E
 - Orange PI Prime (Not tested)
 - Orange PI PC
+- Orange PI PC Plus
 - Orange PI PC 2 (Not tested)
 - Orange PI 3
 - Pinephone
@@ -58,10 +57,10 @@ sudo apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools g
 
 <br/>
 
-- Install additional packages (for building mesa3d and other meson-based components)
+- Install additional packages (for building mesa3d, libcamera and other meson-based components)
 ```bash
-sudo apt-get install -y meson python3-pip pkg-config python3-dev
-sudo pip3 install mako
+sudo apt-get install -y python3-pip pkg-config python3-dev ninja-build
+sudo pip3 install mako meson jinja2 ply
 ```
 
 ### Building GloDroid
@@ -102,8 +101,4 @@ Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* 
 *After several minutes flashing should complete and Android should boot*  
   
 #### NOTE: Monitor has to be connected to the board and powered-up during flashing!
- 
-## Else 
-To use Glodroid with MacOS,please read MacOS instruction 
-
-[MacOS instruction](https://github.com/powenn/glodroid_manifest/tree/master/MacOS%20instruction)
+  
